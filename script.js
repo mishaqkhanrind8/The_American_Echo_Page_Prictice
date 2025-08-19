@@ -77,12 +77,14 @@ window.addEventListener('resize', centerModal);
 const navbarHeight = document.querySelector('nav').offsetHeight;
 console.log("Navbar height:", navbarHeight + "px");
 
-// Form submission alert
-document.getElementById("myForm").addEventListener("submit", function(event) {
-  event.preventDefault(); 
-  alert("Form successfully submitted");
-  this.submit();
+document.getElementById("myForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  myFunction();
 });
+
+function myFunction(){
+  alert("Form has been submitted successfully!");
+}
 
 // Mobile menu toggle with content push-down
 function toggleMenu() {
@@ -101,3 +103,4 @@ function toggleMenu() {
     content.style.marginTop = "0px";
   }
 }
+

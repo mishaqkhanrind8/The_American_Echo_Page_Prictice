@@ -1,0 +1,23 @@
+{
+  "name": "The American Echo",
+  "short_name": "American Echo",
+  "description": "The American Echo Official is a band template website and PWA App created by Muhammad Ishaq Khan",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#orangered",
+  "theme_color": "#orangered",
+  "icons": [
+    {
+      "src": "./assets/",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

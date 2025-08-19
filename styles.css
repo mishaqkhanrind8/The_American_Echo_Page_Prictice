@@ -1,12 +1,13 @@
 :root {
-  --ws-bg-color: black;
-  --ws-text-color: white;
+  --ws-bg-color: #000;
+  --ws-text-color: #fff;
   --nav-bg-color-hover: #444;
   --search-bg-hover: orangered;
   --dropdown-bg-color-hover: #999;
   --dark-opacity-2: rgba(0, 0, 0, 0.2);
   --dark-opacity-4: rgba(0, 0, 0, 0.4);
   --seagreen: #009688 !important;
+  --lightblue: lightblue;
 }
 
 /* Reset & Base */
@@ -32,10 +33,9 @@ body {
   word-spacing: 0.05em;
   word-wrap: break-word;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100vh;
   background-color: var(--ws-bg-color, #000);
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
 }
 
 /* Navbar container */
@@ -54,12 +54,13 @@ body {
 
 .navbar-brand {
   display: block;
-text-decoration: none;
-color: var(--ws-text-color, #fff);
-padding: 12px 16px;
+  text-decoration: none;
+  color: var(--ws-text-color, #fff);
+  padding: 12px 16px;
 }
+
 .navbar-brand:hover {
-  background-color: var(--seagreen, );
+  background-color: var(--seagreen);
 }
 
 /* Links container */
@@ -71,7 +72,7 @@ padding: 12px 16px;
 
 /* Links */
 .navbar ul li a {
-  color: var(--ws-text-color , #fff);
+  color: var(--ws-text-color, #fff);
   text-decoration: none;
   padding: 14px 16px;
   display: block;
@@ -79,7 +80,7 @@ padding: 12px 16px;
 }
 
 .navbar ul li a:hover {
-  background:  var(--seagreen);
+  background-color:  var(--seagreen);
 }
 
 /* Dropdown */
@@ -88,7 +89,7 @@ padding: 12px 16px;
 }
 
 .dropdown button {
-  background: none;
+  background-color: none;
   border: none;
   color: var(--ws-text-color, #fff);
   font-size: 16px;
@@ -109,7 +110,7 @@ padding: 12px 16px;
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--ws-bg-color, #000);
+  background-color: var(--ws-bg-color, #000);
   min-width: 160px;
   flex-direction: column;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
@@ -133,7 +134,7 @@ padding: 12px 16px;
 }
 
 .search-icon:hover {
-  background: var(--search-bg-hover);
+  background-color: var(--search-bg-hover);
 }
 
 /* Hamburger icon */
@@ -149,7 +150,7 @@ padding: 12px 16px;
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background: var(--ws-bg-color, #000);
+  background-color: var(--ws-bg-color, #000);
   position: fixed;
   top: 50px;
   left: 0;
@@ -164,7 +165,7 @@ padding: 12px 16px;
 }
 
 .mobile-menu a:hover {
-  background: var(--seagreen);
+  background-color: var(--seagreen);
 }
 
 /* Slideshow */
@@ -246,7 +247,7 @@ section#tour {
     background-image: url(./assets/tour-section-bg-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 .tour-section {
   width: min(800px, 100%);
@@ -256,7 +257,7 @@ section#tour {
 
 .tour-heading {
   text-align: center;
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
   line-height: 1.5;
   font-weight: 100;
   font-size: 2rem;
@@ -266,11 +267,11 @@ section#tour {
   opacity: 0.5;
   line-height: 2.5;
   text-align: center;
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
 }
 
 div.tour-section ul {
-  background-color: var(--ws-text-color);
+  background-color: var(--ws-text-color, #fff);
   list-style-type: none;
   color: var(--text-gray);
   margin: 0;
@@ -284,7 +285,7 @@ div.tour-section ul li {
 }
 
 ul li span:not(.dark-50) {
-  color: var(--ws-text-color);
+  color: var(--ws-text-color ,#fff);
   background-color: var(--search-bg-hover);
   padding: 2px 4px;
 }
@@ -292,8 +293,8 @@ ul li span:not(.dark-50) {
 ul li span.dark-50 {
   border-radius: 50%;
   padding: 2px 6px;
-  color: var(--ws-text-color);
-  background-color: var(--ws-bg-color);
+  color: var(--ws-text-color, #fff);
+  background-color: var(--ws-bg-color, #000);
   float: right;
 }
 
@@ -307,19 +308,20 @@ ul li span.dark-50 {
 }
 
 .cards-container > div {
-  border: 5px solid var(--ws-text-color);
+  border: 5px solid   var(--ws-text-color, #fff);
   border-radius: 3px;
   overflow: hidden;
-  color: var(--ws-bg-color);
+  color: var(--ws-bg-color, #000);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
 }
 
 .cards-container > div img:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .white-card {
-  background-color: var(--ws-text-color);
-  color: var(--ws-bg-color);
+  background-color: var(--ws-text-color, #fff);
+  color: var(--ws-bg-color, #000);
   margin: -6px auto;
   padding: 12px 16px 20px;
 }
@@ -330,16 +332,17 @@ div.white-card p {
 }
 
 div.white-card button {
-  padding: 8px 14px;
+  padding: 7px 12px;
+  border-radius: 5px;
   border: none;
   background-color: var(--ws-bg-color);
   color: var(--ws-text-color);
-  font-size: 1rem;
+  font-size: 0.82rem;
 }
 
 div.white-card button:hover {
   background-color: var(--dropdown-bg-color-hover);
-  color: var(--ws-bg-color);
+  color: var(--ws-bg-color, #000);
 }
 
 /* Ticket modal section */
@@ -354,9 +357,9 @@ div.white-card button:hover {
 }
 
 .ticket-modal .modal-content {
-   background: var(--ws-text-color);
+   background-color: var(--ws-text-color, #fff);
   width: min(800px, 90%);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative; 
 }
@@ -364,20 +367,20 @@ div.white-card button:hover {
 .modal-header {
   background-color: var(--seagreen);
   padding: 2rem;
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
   text-align: center;
 }
 .close-btn {
   position: absolute;
   top: 1px;
   right: 1px;
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
   padding: 2px 7px;
   border-radius: 50%;
 }
 .close-btn:hover {
   background-color: var(--nav-bg-color-hover);
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #000);
 }
 .modal-header h2 {
   margin: 10px 0;
@@ -385,8 +388,8 @@ div.white-card button:hover {
   font-weight: 400;
 }
 .modal-body {
-  color: var(--ws-bg-color);
-  background-color: var(--ws-text-color);
+  color: var(--ws-bg-color, #000);
+  background-color: var(--ws-text-color, #fff);
   padding: 1rem;
 }
 .ticket-modal input[type="text"] {
@@ -405,7 +408,7 @@ margin: 6px 0;
 .pay-btn {
   display: block;
   width: 100%;
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
   background-color: var(--seagreen);
   border: none;
   padding: 1rem 0;
@@ -428,14 +431,14 @@ margin: 6px 0;
 }
 .close-btn-2 {
   display: block;
-  color: var(--ws-text-color);
+  color: var(--ws-text-color, #fff);
   background-color: var(--search-bg-hover);
   padding: 8px 16px;
   border: none;
 }
 .close-btn-2:hover {
-    background-color: var(--lightblue);
-  color: var(--ws-bg-color);
+    background-color: var(--lightblue), lightblue;
+  color: var(--ws-bg-color, #000);
 }
 
 /* Contact Section */
@@ -476,7 +479,7 @@ margin: 6px 0;
 }
 .contact-form input[type="text"]:focus {
     outline: none;
-    border: 2px solid var(--lightblue);
+    border: 2px solid var(--lightblue, lightblue);
 }
 .form-row {
     display: flex;
@@ -494,12 +497,12 @@ margin: 6px 0;
 
 .form-row input[type="text"]:focus, input[type="email"]:focus {
     outline: none;
-    border: 2px solid var(--lightblue);
+    border: 2px solid var(--lightblue, lightblue);
 }
 
 button[type="submit"] {
-    color: var(--ws-text-color);
-    background-color: var(--ws-bg-color);
+    color: var(--ws-text-color, #fff);
+    background-color: var(--ws-bg-color, #000);
     border: none;
     padding: 8px 14px;
     display: block;
@@ -513,10 +516,10 @@ button[type="submit"]:hover {
 }
 
 footer {
-  margin: -7px auto;
+  margin: -7px auto 1rem;
   text-align: center;
-  background-color: var(--ws-bg-color);
-  color: var(--ws-text-color);
+  background-color: var(--ws-bg-color, #000);
+  color: var(--ws-text-color, #fff);
   padding: 3rem;
 }
 
@@ -602,13 +605,13 @@ div.social-links > a i:hover {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .cards-container {
     display: grid;
     grid-template-columns: auto;
-    gap: 1rem;
+    gap: 0.8rem;
     margin: 2rem auto;
   }
   .contact-container {

@@ -593,10 +593,7 @@ div.social-links > a i:hover {
   p {
     padding: 0 1rem;
   }
-section#tour {
-    background: linear-gradient(to 175deg, blue, green, dodgerblue) !important;
-     background-image: none !important; 
-}
+
   .grid-container {
     display: grid;
     grid-template-columns: auto;
@@ -645,6 +642,6 @@ section#tour {
   }
   div.social-links > a i {
   font-size: 20px;
-  transition: transform 0.3s;
 } 
 }
+

@@ -6,8 +6,8 @@ self.addEventListener('install', function(event) {
         './index.html',
         '/styles.css',
         '/scripts.js',
-        '/assets/favicon192.png',
-        '/assets/favicon512.png'
+        '/assets/android-chrome-192x192.png',
+        '/assets/android-chrome-512x512.png'
       ]);
     })
   );

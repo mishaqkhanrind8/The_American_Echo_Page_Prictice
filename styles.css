@@ -89,7 +89,7 @@ body {
 }
 
 .dropdown button {
-  background-color: none;
+  background-color: var(--ws-bg-color, #000);
   border: none;
   color: var(--ws-text-color, #fff);
   font-size: 16px;
@@ -652,4 +652,5 @@ div.social-links > a i:hover {
   font-size: 20px;
 } 
 }
+
 

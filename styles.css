@@ -1,4 +1,5 @@
 :root {
+  /* ==== Color Variables ==== */
   --ws-bg-color: #000;
   --ws-text-color: #fff;
   --nav-bg-color-hover: #444;
@@ -10,7 +11,9 @@
   --lightblue: lightblue;
 }
 
-/* Reset & Base */
+/* ============================= */
+/* RESET & BASE                  */
+/* ============================= */
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -38,7 +41,9 @@ body {
   color: var(--ws-text-color, #fff);
 }
 
-/* Navbar container */
+/* ============================= */
+/* NAVBAR                        */
+/* ============================= */
 .navbar {
   position: fixed;
   top: 0;
@@ -83,7 +88,9 @@ body {
   background-color:  var(--seagreen);
 }
 
-/* Dropdown */
+/* ============================= */
+/* DROPDOWN MENU                 */
+/* ============================= */
 .dropdown {
   position: relative;
 }
@@ -124,7 +131,9 @@ body {
   display: flex;
 }
 
-/* Search icon */
+/* ============================= */
+/* SEARCH ICON                   */
+/* ============================= */
 .search-icon {
   display: block;
   margin-left: auto;
@@ -137,7 +146,9 @@ body {
   background-color: var(--search-bg-hover);
 }
 
-/* Hamburger icon */
+/* ============================= */
+/* HAMBURGER (Mobile Icon)       */
+/* ============================= */
 .hamburger {
   display: none;
   font-size: 20px;
@@ -168,7 +179,9 @@ body {
   background-color: var(--seagreen);
 }
 
-/* Slideshow */
+/* ============================= */
+/* SLIDESHOW                     */
+/* ============================= */
 .mySlides {
   position: relative;
   color: var(--ws-text-color, #fff);
@@ -189,17 +202,20 @@ h3 {
   line-height: 2.8;
 }
 
+/* ============================= */
+/* MAIN + HERO SECTION           */
+/* ============================= */
 main {
   margin-top: 48px;
-background-color: var(--ws-text-color , #fff) !important;
-color: var(--ws-bg-color, #000) !important;
+  background-color: var(--ws-text-color , #fff) !important;
+  color: var(--ws-bg-color, #000) !important;
 }
- section img {
+
+section img {
    border-radius: 5px;
    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
-   
- }
-/* Hero Section */
+}
+
 .hero-section {
   width: min(800px, 100%);
   margin: 0 auto;
@@ -241,13 +257,16 @@ color: var(--ws-bg-color, #000) !important;
   margin: 0 auto;
 }
 
-/* Tour Section */
+/* ============================= */
+/* TOUR SECTION                  */
+/* ============================= */
 section#tour {
-    background-image: url(./assets/tour-section-bg-image.jpg);
+  background-image: url(./assets/tour-section-bg-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .tour-section {
   width: min(800px, 100%);
   margin: 3.5rem auto;
@@ -297,7 +316,9 @@ ul li span.dark-50 {
   float: right;
 }
 
-/* Cards */
+/* ============================= */
+/* CARDS SECTION                 */
+/* ============================= */
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -344,7 +365,9 @@ div.white-card button:hover {
   color: var(--ws-bg-color, #000);
 }
 
-/* Ticket modal section */
+/* ============================= */
+/* TICKET MODAL                  */
+/* ============================= */
 .ticket-modal {
   display: none;
   position: fixed;
@@ -356,7 +379,7 @@ div.white-card button:hover {
 }
 
 .ticket-modal .modal-content {
-   background-color: var(--ws-text-color, #fff);
+  background-color: var(--ws-text-color, #fff);
   width: min(800px, 90%);
   border-radius: 10px;
   overflow: hidden;
@@ -369,6 +392,7 @@ div.white-card button:hover {
   color: var(--ws-text-color, #fff);
   text-align: center;
 }
+
 .close-btn {
   position: absolute;
   top: 1px;
@@ -377,26 +401,30 @@ div.white-card button:hover {
   padding: 2px 7px;
   border-radius: 50%;
 }
+
 .close-btn:hover {
   background-color: var(--nav-bg-color-hover);
   color: var(--ws-text-color, #000);
 }
+
 .modal-header h2 {
   margin: 10px 0;
   letter-spacing: 4px;
   font-weight: 400;
 }
+
 .modal-body {
   color: var(--ws-bg-color, #000);
   background-color: var(--ws-text-color, #fff);
   padding: 1rem;
 }
+
 .ticket-modal input[type="text"] {
-display: block;
-width: 100%;
-padding: 10px;
-border: 1px solid var(--dark-opacity-4);
-margin: 6px 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-opacity-4);
+  margin: 6px 0;
 }
 
 .ticket-modal input[type="text"]:focus {
@@ -413,6 +441,7 @@ margin: 6px 0;
   padding: 1rem 0;
   margin-bottom: 2rem;
 }
+
 .pay-btn:hover {
   background-color: var(--lightblue);
   color: var(--ws-bg-color);
@@ -428,6 +457,7 @@ margin: 6px 0;
 .flex-btn .help-text {
   margin: 0;
 }
+
 .close-btn-2 {
   display: block;
   color: var(--ws-text-color, #fff);
@@ -435,16 +465,20 @@ margin: 6px 0;
   padding: 8px 16px;
   border: none;
 }
+
 .close-btn-2:hover {
-    background-color: var(--lightblue), lightblue;
+  background-color: var(--lightblue), lightblue;
   color: var(--ws-bg-color, #000);
 }
 
-/* Contact Section */
+/* ============================= */
+/* CONTACT SECTION               */
+/* ============================= */
 .contact-section {
   width: min(800px, 100%);
   margin: 4.5rem auto;
 }
+
 .contact-header {
   margin: 3.5rem 0 0;
   text-align: center;
@@ -453,33 +487,40 @@ margin: 6px 0;
   font-size: 30px;
   letter-spacing: 3px;
 }
+
 .contact-subtitle {
   text-align: center;
   opacity: 0.5;
   margin-bottom: 3rem;
 }
+
 .contact-container {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
 }
+
 .contact-info {
   padding: 1rem;
 }
+
 .contact-form {
   padding: 1rem;
   display: table-column;
 }
+
 .contact-form input[type="text"] {
     display: block;
     width: 100%;
     padding: 10px;
     border-color: var(--dark-opacity-2);
 }
+
 .contact-form input[type="text"]:focus {
     outline: none;
     border: 2px solid var(--lightblue, lightblue);
 }
+
 .form-row {
     display: flex;
     flex-direction: row;
@@ -514,6 +555,9 @@ button[type="submit"]:hover {
     color: var(--ws-bg-color);
 }
 
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
 footer {
   margin: -7px auto 1rem;
   text-align: center;
@@ -530,27 +574,29 @@ div.social-links {
   align-items: center;
   width: min(450px, 100%);
   margin: 0 auto 2rem;
-  
 }
+
 div.social-links a {
-display: block;
-width: 40px;
+  display: block;
+  width: 40px;
 }
 
 footer p a {
   color: var(--search-bg-hover);
   text-decoration: none;
 }
+
 footer p a:hover{
   text-decoration: underline;
   text-decoration-color: var(--seagreen);
 }
+
 div.social-links > a i {
   font-size: 32px;
   transition: transform 0.3s;
 }
 
-/* Colors */
+/* Social Icon Colors */
 .facebook { color: #3b5998; }
 .instagram { color: #e1306c; }
 .twitter { color: #1da1f2; }
@@ -563,7 +609,9 @@ div.social-links > a i:hover {
   transform: scale(1.2);
 }
 
-/* Media Queries */
+/* ============================= */
+/* MEDIA QUERIES (Mobile <600px) */
+/* ============================= */
 @media only screen and (max-width: 600px) {
   .navbar {
     display: flex;
@@ -613,23 +661,26 @@ div.social-links > a i:hover {
     gap: 0.8rem;
     margin: 2rem auto;
   }
+
   .contact-container {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: auto;
-}
-/* Ticket modal section */
-.ticket-modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -42%);
-  background: rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-}
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+
+  /* Ticket modal section */
+  .ticket-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+
   #navDemo.open {
     flex-direction: column;
     align-items: flex-start;
@@ -644,14 +695,12 @@ div.social-links > a i:hover {
     padding: 12px 20px;
     width: 100%;
   }
+
   .search-icon {
     display: none;
   }
+
   div.social-links > a i {
-  font-size: 20px;
-} 
+    font-size: 20px;
+  } 
 }
-
-
-
-

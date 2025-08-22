@@ -285,7 +285,7 @@ section#tour {
   opacity: 0.5;
   line-height: 2.5;
   text-align: center;
-  color: var(--ws-text-color, #fff);
+  color: var(--gray, gray);
 }
 
 div.tour-section ul {

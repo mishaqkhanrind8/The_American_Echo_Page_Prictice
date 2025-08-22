@@ -3,7 +3,7 @@ self.addEventListener('install', function(event) {
     caches.open('ppl-cache-v1').then(function(cache) {
       return cache.addAll([
         './',
-        './index.html',
+        '/index.html',
         '/styles.css',
         '/scripts.js',
         '/assets/android-chrome-192x192.png',

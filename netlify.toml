@@ -1,0 +1,27 @@
+# Enable Netlify Image Optimization Plugin
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+
+# Build settings
+[build]
+  publish = "dist"   # Build output folder (example: dist or build)
+
+# Redirect rules for Netlify Image Transformations
+[[redirects]]
+  from = "/assets/full/:file"
+  to = "/.netlify/images?url=/assets/:file"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/assets/:width/:file"
+  to = "/.netlify/images?url=/assets/:file&width=:width"
+  status = 200
+  force = true
+
+# Netlify Images settings (Optional)
+[images]
+  # Allow optimization of external images from remote URLs
+  remote_images = [
+    "https://my-images.com/.*"
+  ]

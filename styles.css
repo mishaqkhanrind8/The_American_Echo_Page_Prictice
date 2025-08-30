@@ -269,7 +269,7 @@ section img {
 /* TOUR SECTION                  */
 /* ============================= */
 section#tour {
-  background-image: url(./assets/tour-section-bg-image.jpg);
+  background-image: url(./assets/tour-section-bg-image.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -242,7 +242,7 @@ section img {
 
 .grid-container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 3rem auto;
 }

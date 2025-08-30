@@ -216,6 +216,35 @@ body {
   background-color: var(--seagreen);
 }
 
+/* ============================= */
+/* SLIDESHOW                     */
+/* ============================= */
+.mySlides {
+  position: relative;
+  color: var(--ws-text-color, #fff);
+  text-align: center;
+  z-index: 1;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.inner-text-1,
+div.inner-text-2,
+div.inner-text-3 {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  z-index: 2;
+}
+
 </style>
 
 <!-- Preload main stylesheet -->

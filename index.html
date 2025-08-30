@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>The American Echo Official</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content=" The American Echo - official landing page. Listen to our 
-latest music, explore upcoming tour dates, and stay connected with our journey.">
+<title>The American Echo | Rise of Sound Tour</title>
+<meta name="description" content="Find tour dates, band info, merch and 
+contact details for The American Echo.">
 <meta name="author" content=" Muhammad Ishaq Khan, contact: 03021905493, Multan, Pakistan">
 <meta name="keywords" content="The American Echo Official, rock band, live music, tour dates,
  new album, official band website, music group, band merch">
@@ -44,15 +44,15 @@ latest music, explore upcoming tour dates, and stay connected with our journey."
 <div class="navbar">
   <a class="navbar-brand" href="#">HOME</a>
   <ul>
-    <li><a href="#band">BAND</a></li>
-    <li><a href="#tour">TOUR</a></li>
-    <li><a href="#contact">CONTACT</a></li>
+    <li><a href="#band" aria-label="BAND">BAND</a></li>
+    <li><a href="#tour" aria-label="TOUR">TOUR</a></li>
+    <li><a href="#contact" aria-label="CONTACT">CONTACT</a></li>
     <li class="dropdown">
       <button>MORE <i class="fa fa-caret-down"></i></button>
       <div class="dropdown-content">
-        <a href="#">Merchandise</a>
-        <a href="#">Extras</a>
-        <a href="#">Media</a>
+        <a href="#" aria-label="Merchandise">Merchandise</a>
+        <a href="#" aria-label="Extras">Extras</a>
+        <a href="#" aria-label="Media">Media</a>
       </div>
     </li>
   </ul>
@@ -64,9 +64,9 @@ latest music, explore upcoming tour dates, and stay connected with our journey."
 <!-- Mobile Menu -->
  <div class="mobile-section">
 <div id="mobileMenu" class="mobile-menu">
-  <a href="#band" onclick="toggleMenu()">BAND</a>
-  <a href="#tour" onclick="toggleMenu()">TOUR</a>
-  <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+  <a href="#band" onclick="toggleMenu()" aria-label="band">BAND</a>
+  <a href="#tour" onclick="toggleMenu()" aria-label="tour">TOUR</a>
+  <a href="#contact" onclick="toggleMenu()" aria-label="contact">CONTACT</a>
   <a href="#" onclick="toggleMenu()">MERCH</a>
 </div>
 </div>
@@ -245,7 +245,7 @@ latest music, explore upcoming tour dates, and stay connected with our journey."
 </div>
   <p>© 2025 <em><a href="https://pro.fiverr.com/freelancers/ishaqkhanrind78?">The American Echo</a></em>. All Rights Reserved.</p>
 </footer>
-<script src="./script.js"></script>
+<script src="./script.js" defer></script>
 </body>
 
 </html>

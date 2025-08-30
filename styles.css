@@ -679,6 +679,12 @@ img {
     gap: 0.8rem;
   }
 
+  .grid-container div img {
+    height: 250px;
+    width: 80%;
+    display: block;
+  }
+
   .cards-container {
     display: grid;
     grid-template-columns: auto;

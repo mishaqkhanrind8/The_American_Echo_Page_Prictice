@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,22 +7,25 @@
 <title>The American Echo | Rise of Sound Tour</title>
 <meta name="description" content="Find tour dates, band info, merch and 
 contact details for The American Echo.">
-<meta name="author" content=" Muhammad Ishaq Khan, contact: 03021905493, Multan, Pakistan">
+<meta name="author" content="Muhammad Ishaq Khan, contact: 03021905493, Multan, Pakistan">
 <meta name="keywords" content="The American Echo Official, rock band, live music, tour dates,
  new album, official band website, music group, band merch">
-<!-- Open Graph (Facebook & LinkedIn) -->
+
+<!-- Open Graph -->
 <meta property="og:title" content="The American Echo Official">
-<meta property="og: description" content=" Listen to The American Echo Official’s latest tracks,
+<meta property="og:description" content="Listen to The American Echo Official’s latest tracks,
  check out our tour dates, and shop official band merch.">
-<meta property="og:type" content=" Website">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://theamericanechoofficials.netlify.app/">
 <meta property="og:image" content="assets/android-chrome-512x512.png">
+
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="assets/android-chrome-512x512.png">
-<meta name="twitter:title" content="The Amercian Echo Official">
-<meta name="twitter: description" content=" Join The American Echo Official on our musical
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The American Echo Official">
+<meta name="twitter:description" content="Join The American Echo Official on our musical
  journey – latest songs, tour dates & merch.">
 <meta name="twitter:image" content="assets/android-chrome-512x512.png">
+
 <!-- Favicon -->
 <link rel="icon" href="assets/favicon.ico">
 <link rel="icon" href="assets/favicon-16x16.png">
@@ -31,9 +34,18 @@ contact details for The American Echo.">
 <link rel="icon" href="assets/android-chrome-512x512.png">
 <link rel="icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
-<link rel="stylesheet" href="styles.css">
-<!-- Font Awesome 6 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- ✅ Preload main stylesheet -->
+<link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+<!-- Preload hero image (LCP candidate) -->
+<link rel="preload" as="image" href="assets/hero.jpg">
+
+<!-- Font Awesome: load asynchronously -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
 </head>
 
 <body>

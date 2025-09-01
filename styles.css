@@ -359,8 +359,8 @@ ul li span.dark-50 {
 }
 
 .white-card {
-  background-color: var(--ws-text-color, #fff);
-  color: var(--ws-bg-color, #000);
+  background-color: #f9f9f9;
+  color: #222;
   margin: -6px auto;
   padding: 12px 16px 20px;
 }
